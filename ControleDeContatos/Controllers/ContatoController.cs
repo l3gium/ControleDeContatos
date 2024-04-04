@@ -67,28 +67,6 @@ namespace ControleDeContatos.Controllers
         }
 
         [HttpPost]
-
-        //public IActionResult Criar(ContatoModel contato)
-        //{
-        //    try
-        //    {
-        //        if (ModelState.IsValid)
-        //        {
-        //            UsuarioModel usuarioLogado = _sessao.BuscarSessaoUsuario();
-        //            contato.UsuarioId = usuarioLogado.Id;
-
-        //            contato = _contatoRepositorio.Adicionar(contato);
-        //            TempData["MensagemSucesso"] = "Contato cadastrado com sucesso!";
-        //            return RedirectToAction("Index");
-        //        }
-        //    }
-        //    catch(System.Exception erro) 
-        //    {
-        //        TempData["MensagemErro"] = $"Erro no cadastro do usuário: {erro.Message}";
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View(contato);
-        //}
         public IActionResult Criar(ContatoModel contato)
         {
             try
